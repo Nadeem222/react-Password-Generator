@@ -39,8 +39,8 @@ function App() {
     } ,[length , numberAllowed , charAllowed , passwordGenerator])
   return (
     <>
-      <div className='w-full max-w-md text-orange-500 rounded-lg px-4 py-3 my-8 shadow-md bg-gray-600'>
-        <h1 className='text-white text-center'>Password Generator</h1>
+      <div className='  w-full max-w-md mx-auto text-#93deff  rounded-lg px-4 py-3 my-8 shadow-md bg-gray-600'>
+        <h1 className='text-white text-center text-2xl font-bold'>Password Generator</h1>
         <div className='flex shadow rounded-lg overflow-hidden mb-4 my-2'>
           <input 
           type="text"
@@ -65,7 +65,7 @@ function App() {
         max={100}
         value={length} 
         onChange={(e) => {setLength(e.target.value)}}/>
-        <label >Label: {length} </label>
+        <label className='font-bold' >Label: {length} </label>
       </div>
       <div className='flex gap-x-1 items-center'>
         <input
@@ -76,7 +76,7 @@ function App() {
           }}
           
         />
-        <label htmlFor="numbersInput">Numbers</label>
+        <label htmlFor="numbersInput" className='font-bold'>Numbers</label>
       </div>
       <div className='flex gap-x-1 items-center'>
         <input
@@ -87,7 +87,7 @@ function App() {
           }}
           
         />
-        <label htmlFor="characterInput">Characters</label>
+        <label htmlFor="characterInput" className='font-bold'>Characters</label>
       </div>
         </div>
       </div>
